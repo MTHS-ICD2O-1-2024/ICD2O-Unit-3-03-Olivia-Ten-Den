@@ -3,10 +3,7 @@
 <html lang="en-ca">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Volume of a right rectangular pyramid, with JS"
-    />
+    <meta name="description" content="Volume of a Sphere, with JS" />
     <meta name="keywords" content="mths, icd2o" />
     <meta name="author" content="Olivia TD" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,7 +34,7 @@
       href="./favicon-16x16.png"
     />
     <link rel="manifest" href="./site.webmanifest" />
-    <title>Volume of a right rectangular pyramid, with JS</title>
+    <title>Volume of a Sphere, with JS</title>
   </head>
 
   <body>
@@ -46,84 +43,47 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title"
-            >Volume of a right rectangular pyramid, with JS</span
-          >
+          <span class="mdl-layout-title">Volume of a Sphere, with JS</span>
         </div>
       </header>
       <main class="mdl-layout__content">
         <div class="right-image">
           <img
-            src="./images/pyramid.png"
-            alt="Image of pyramid with labeled sides."
+            src="./images/volume-of-sphere.png"
+            alt="Image of sphere with labeled sides."
           />
         </div>
         <div class="page-content">
-          Formula: V = l * w * h / 3
+          Formula: 4 /3 π r³
           <br />
           <br />
-          Please enter the pyramid's for measurements (mm).
+          Please enter the pyramid's for measurements in cm.
         </div>
         <br />
         <form>
-          Length:
+          Radius:
           <div class="mdl-textfield mdl-js-textfield">
             <!-- input pattern attribute -->
             <input
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="length-of-pyramid"
+              id="radius-of-sphere"
             />
             <!-- mdl-textfield__label -->
-            <label class="mdl-textfield__label" for="length-of-pyramid"
-              >Length of pyramid (mm)</label
+            <label class="mdl-textfield__label" for="radius-of-sphere"
+              >Enter the radius of the sphere (cm)</label
             >
             <!-- class "mdl-textfield__error" -->
             <span class="mdl-textfield__error">Input is not a number.</span>
           </div>
-          mm
+          cm
           <br />
-          Width:
-          <div class="mdl-textfield mdl-js-textfield">
-            <!-- input pattern attribute -->
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="width-of-pyramid"
-            />
-            <!-- mdl-textfield__label -->
-            <label class="mdl-textfield__label" for="width-of-pyramid"
-              >width of pyramid (mm)</label
-            >
-            <!-- class "mdl-textfield__error" -->
-            <span class="mdl-textfield__error">Input is not a number.</span>
-          </div>
-          mm
-          <br />
-          Height:
-          <div class="mdl-textfield mdl-js-textfield">
-            <!-- input pattern attribute -->
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="height-of-pyramid"
-            />
-            <!-- mdl-textfield__label -->
-            <label class="mdl-textfield__label" for="height-of-pyramid"
-              >Height of pyramid (mm)</label
-            >
-            <!-- class "mdl-textfield__error" -->
-            <span class="mdl-textfield__error">Input is not a number.</span>
-          </div>
-          mm
           <br />
           <!-- Accent-colored raised button with ripple -->
           <button
             class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-            onclick="calculateVolumeOfPyramid()"
+            onclick="calculateVolumeOfSphere()"
             type="button"
           >
             Calculate

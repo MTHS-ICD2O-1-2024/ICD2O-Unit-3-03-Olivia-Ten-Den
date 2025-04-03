@@ -20,5 +20,5 @@ function calculateVolumeOfSphere() {
 
   // output
   document.getElementById("volume").innerHTML =
-    "The volume is: " + volumeOfSphere + " mm³"
+    "The volume is: " + volumeOfSphere + " cm³"
 }
